@@ -1,5 +1,5 @@
 {
-  "name": "gh-vue-el-form-edit",
+  "name": "gh-form-edit",
   "description": "基于vue,el二次封装的自定义form表单",
   "version": "0.1.0",
   "author": "godHandsome <cdzyh816@qq.com>",
@@ -10,7 +10,6 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:publish": "vue-cli-service build --target lib --name ghEditForm src/index.js",
     "lib": "vue-cli-service build --target lib --name ghEditForm --dest lib ./src/index.js"
   },
   "repository": {
