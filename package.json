@@ -1,0 +1,48 @@
+{
+  "name": "gh-vue-el-form-edit",
+  "description": "基于vue,el二次封装的自定义form表单",
+  "version": "0.1.0",
+  "author": "godHandsome <cdzyh816@qq.com>",
+  "private": false,
+  "license": "MIT",
+  "main": "lib/ghEditForm.common.js",
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build:publish": "vue-cli-service build --target lib --name ghEditForm src/index.js",
+    "lib": "vue-cli-service build --target lib --name ghEditForm --dest lib ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GODhandsome/form-edit-gh"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
+    "lodash": "^4.17.21",
+    "vue": "^2.6.11",
+    "vue-slicksort": "^1.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "keywords": [
+    "vue",
+    "element-ui",
+    "form"
+  ]
+}
