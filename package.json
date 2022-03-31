@@ -1,7 +1,7 @@
 {
   "name": "gh-form-edit",
   "description": "基于vue,el二次封装的自定义form表单",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "godHandsome <cdzyh816@qq.com>",
   "private": false,
   "license": "MIT",
