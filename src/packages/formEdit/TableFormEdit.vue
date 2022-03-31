@@ -100,9 +100,6 @@
           </SlickItem>
         </SlickList>
       </el-form>
-      <div style="text-align: center">
-        <el-button type="primary" @click="handleSubmit">保存</el-button>
-      </div>
     </el-main>
     <el-aside width="25%" style="border-left: 1px solid #d8dce5" class="aside-wrapper">
       <el-tabs v-if="isSelectItem" v-model="tabName" class="tab">
@@ -147,23 +144,12 @@ export default {
     PreviewDialog,
   },
   props: {
-    list: {
+    editList: {
       type: Array,
       default() {
         return [];
       },
     },
-  },
-  watch: {
-    list: {
-      deep: true,
-      handler(newVal) {
-        this.editList = cloneDeep(newVal);
-      },
-    },
-  },
-  created() {
-    this.editList = cloneDeep(this.list);
   },
   data() {
     return {
@@ -175,7 +161,6 @@ export default {
       previewDialogVisible: false,
       previewData: [],
       checkboxGroup: [],
-      editList: [],
     };
   },
   computed: {
@@ -206,10 +191,6 @@ export default {
     },
   },
   methods: {
-    async handleSubmit() {
-      console.log(this.editList);
-      this.$emit('save', this.editList);
-    },
     handlePreview() {
       this.previewData = cloneDeep(this.editList);
       this.previewDialogVisible = true;
@@ -231,6 +212,7 @@ export default {
       this.editList.push({
         label: '标签文本',
         fieldCode: randomString(4),
+        itemId: randomString(12),
         elType: 'el-input',
         disabled: false,
         canEdit: true,

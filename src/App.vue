@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <formEit />
+    <formEit :editList="list" />
+    <el-button type="primary" @click="handleSave">保存</el-button>
   </div>
 </template>
 
@@ -16,6 +17,11 @@ export default {
     return {
       list: [],
     };
+  },
+  methods: {
+    handleSave() {
+      console.log(this.list);
+    },
   },
 };
 </script>

@@ -6,7 +6,7 @@
     width="600px"
     :before-close="handleClose"
   >
-    <CustomerForm ref="CustomerForm" :form.sync="form" :list="list" @handleSubmit="handleSubmit" />
+    <CustomerForm ref="CustomerForm" :form.sync="form" :list="list" @submit="handleSubmit" />
     <div slot="footer">
       <el-button @click="handleClose">关闭11</el-button>
       <el-button @click="handleSave">保存22</el-button>
@@ -49,7 +49,7 @@ export default {
       this.$emit('handleChangeVisible', false);
     },
     handleSave() {
-      this.$refs.CustomerForm.handleSubmit();
+      this.$refs.CustomerForm.handleValidate();
     },
     handleSubmit(values, edit) {
       console.log(values, edit);

@@ -305,10 +305,10 @@ export default {
 
       return value;
     },
-    async handleSubmit() {
+    async handleValidate() {
       await this.$refs.form.validate();
       const values = this.formatValues();
-      this.$emit('handleSubmit', values, this.isEdit);
+      this.$emit('submit', values, this.isEdit);
     },
   },
 };
