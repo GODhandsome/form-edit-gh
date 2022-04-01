@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import formEit from './packages/formEdit/TableFormEdit.vue';
+import formEit from './packages/formEdit/FormEdit.vue';
 
 export default {
   name: 'App',

@@ -1,12 +1,12 @@
-import TableFormEdit from './packages/formEdit/TableFormEdit.vue';
+import FormEdit from './packages/formEdit/FormEdit.vue';
 import CustomerForm from './packages/components/CustomerForm.vue';
 
-TableFormEdit.install = (Vue) => {
-  Vue.component(TableFormEdit.name, TableFormEdit);
+FormEdit.install = (Vue) => {
+  Vue.component(FormEdit.name, FormEdit);
 };
 
 CustomerForm.install = (Vue) => {
   Vue.component(CustomerForm.name, CustomerForm);
 };
 
-export { TableFormEdit, CustomerForm };
+export { FormEdit, CustomerForm };

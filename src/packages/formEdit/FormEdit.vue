@@ -1,6 +1,6 @@
 <template>
   <el-container class="container">
-    <el-main style="display: flex; flex-direction: column">
+    <el-main style="display: flex; flex-direction: column; height: 100%">
       <div>
         <el-button type="primary" @click="handleAddFormItem">增加</el-button>
         <el-button type="primary" @click="handlePreview">预览</el-button>
