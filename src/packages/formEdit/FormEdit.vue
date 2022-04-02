@@ -143,9 +143,14 @@ export default {
     SlickList,
     PreviewDialog,
   },
+  model: {
+    prop: 'value',
+    event: 'update',
+  },
   props: {
-    editList: {
+    value: {
       type: Array,
+      require: true,
       default() {
         return [];
       },
@@ -161,7 +166,20 @@ export default {
       previewDialogVisible: false,
       previewData: [],
       checkboxGroup: [],
+      editList: [],
     };
+  },
+  created() {
+    this.editList = cloneDeep(this.value);
+  },
+  watch: {
+    editList: {
+      deep: true,
+      handler(newVal) {
+        console.log(newVal);
+        this.$emit('update', newVal);
+      },
+    },
   },
   computed: {
     isSelectItem() {
@@ -223,6 +241,9 @@ export default {
         formatValue: {},
         rules: [],
       });
+    },
+    resetFormEdit(list) {
+      this.editList = cloneDeep(list || []);
     },
   },
 };

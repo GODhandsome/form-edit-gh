@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <formEit :editList="list" />
+    <formEdit ref="formEdit" v-model="list" />
     <el-button type="primary" @click="handleSave">保存</el-button>
   </div>
 </template>
 
 <script>
-import formEit from './packages/formEdit/FormEdit.vue';
+import formEdit from './packages/formEdit/FormEdit.vue';
 
 export default {
   name: 'App',
   components: {
-    formEit,
+    formEdit,
   },
   data() {
     return {
