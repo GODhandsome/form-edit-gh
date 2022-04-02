@@ -176,7 +176,6 @@ export default {
     editList: {
       deep: true,
       handler(newVal) {
-        console.log(newVal);
         this.$emit('update', newVal);
       },
     },
