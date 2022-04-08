@@ -12,6 +12,15 @@
       <el-input v-model="form.label" />
     </el-form-item>
     <el-form-item label="属性值">
+      <el-tooltip
+        slot="label"
+        class="item"
+        effect="dark"
+        content="对应数据库表字段"
+        placement="left"
+      >
+        <div>属性值<i class="el-icon-warning" /></div>
+      </el-tooltip>
       <el-input v-model="form.fieldCode" />
     </el-form-item>
     <el-form-item label="占位内容">
