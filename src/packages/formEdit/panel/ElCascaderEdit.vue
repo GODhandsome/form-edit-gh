@@ -19,11 +19,11 @@
       </el-tooltip>
       <el-switch v-model="form['show-all-levels']" />
     </el-form-item> -->
-    <el-form-item label="尺寸">
+    <!-- <el-form-item label="尺寸">
       <el-select v-model="form.size" placeholder="请选择尺寸">
         <el-option v-for="item in SIZE" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-    </el-form-item>
+    </el-form-item> -->
 
     <DataSource :select-options="selectOptions" />
     <DataFormat :format-value="formatValue" />

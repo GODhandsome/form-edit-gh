@@ -12,11 +12,11 @@
     <el-form-item label="数值精度">
       <el-input-number v-model="form.precision" />
     </el-form-item>
-    <el-form-item label="尺寸">
+    <!-- <el-form-item label="尺寸">
       <el-select v-model="form.size" placeholder="请选择尺寸">
         <el-option v-for="item in SIZE" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-    </el-form-item>
+    </el-form-item> -->
     <el-form-item label="控制按钮">
       <el-switch v-model="form.controls" />
     </el-form-item>

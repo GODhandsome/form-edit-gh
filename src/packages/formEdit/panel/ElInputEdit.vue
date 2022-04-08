@@ -41,11 +41,11 @@
     <el-form-item v-if="form.type === 'textarea' || form.type === 'text'" label="字数统计">
       <el-switch v-model="form['show-word-limit']" />
     </el-form-item>
-    <el-form-item v-if="form.type !== 'textarea'" label="尺寸">
+    <!-- <el-form-item v-if="form.type !== 'textarea'" label="尺寸">
       <el-select v-model="form.size" placeholder="请选择尺寸">
         <el-option v-for="item in SIZE" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-    </el-form-item>
+    </el-form-item> -->
     <template v-if="form.type === 'textarea'">
       <el-form-item label="是否自适应高度">
         <el-switch v-model="customRow" />

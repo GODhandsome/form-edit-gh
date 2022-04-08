@@ -3,11 +3,11 @@
     <el-form-item label="透明度选择">
       <el-switch v-model="form['show-alpha']" @change="handleChangeAlpha" />
     </el-form-item>
-    <el-form-item label="尺寸">
+    <!-- <el-form-item label="尺寸">
       <el-select v-model="form.size" placeholder="请选择尺寸">
         <el-option v-for="item in SIZE" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-    </el-form-item>
+    </el-form-item> -->
     <el-form-item label="预定义颜色">
       <el-button type="primary" icon="el-icon-plus" circle @click="handleAddColor" />
     </el-form-item>

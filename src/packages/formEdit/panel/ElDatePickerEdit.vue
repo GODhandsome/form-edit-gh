@@ -33,11 +33,11 @@
       </el-tooltip>
       <el-input v-model="form['start-placeholder']" />
     </el-form-item>
-    <el-form-item label="尺寸">
+    <!-- <el-form-item label="尺寸">
       <el-select v-model="form['size']" placeholder="请选择尺寸">
         <el-option v-for="item in SIZE" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-    </el-form-item>
+    </el-form-item> -->
     <el-form-item label="对齐方式">
       <el-select v-model="form['align']" placeholder="请选择对齐方式">
         <el-option

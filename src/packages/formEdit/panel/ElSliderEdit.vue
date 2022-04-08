@@ -22,7 +22,7 @@
       <el-form-item label="输入框控制器">
         <el-switch v-model="form['show-input-controls']" />
       </el-form-item>
-      <el-form-item label="尺寸">
+      <!-- <el-form-item label="尺寸">
         <el-select v-model="form['input-size']" placeholder="请选择尺寸">
           <el-option
             v-for="item in SIZE"
@@ -31,7 +31,7 @@
             :value="item.value"
           />
         </el-select>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item label="输入延迟">
         <el-input-number v-model="form.debounce" :min="0" />
       </el-form-item>

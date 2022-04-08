@@ -24,11 +24,11 @@
       </el-select>
     </el-form-item>
 
-    <el-form-item label="尺寸">
+    <!-- <el-form-item label="尺寸">
       <el-select v-model="form.size" clearable placeholder="请选择尺寸">
         <el-option v-for="item in SIZE" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-    </el-form-item>
+    </el-form-item> -->
 
     <el-form-item label="背景色">
       <el-color-picker v-model="form.color" />
