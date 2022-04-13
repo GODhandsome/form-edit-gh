@@ -228,7 +228,7 @@ export default {
     handleAddFormItem() {
       this.editList.push({
         label: '标签文本',
-        fieldCode: randomString(4),
+        fieldCode: randomString(12),
         itemId: randomString(12),
         elType: 'el-input',
         disabled: false,

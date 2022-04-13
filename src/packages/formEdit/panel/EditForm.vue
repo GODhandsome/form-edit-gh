@@ -11,7 +11,7 @@
     <el-form-item label="标题">
       <el-input v-model="form.label" />
     </el-form-item>
-    <el-form-item label="属性值">
+    <!-- <el-form-item label="属性值">
       <el-tooltip
         slot="label"
         class="item"
@@ -22,7 +22,7 @@
         <div>属性值<i class="el-icon-warning" /></div>
       </el-tooltip>
       <el-input v-model="form.fieldCode" />
-    </el-form-item>
+    </el-form-item> -->
     <el-form-item label="占位内容">
       <el-input v-model="form.placeholder" />
     </el-form-item>
